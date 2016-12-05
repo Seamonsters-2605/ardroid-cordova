@@ -1,8 +1,12 @@
 .panel {
     border: 1px solid gray;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
     margin-top: 4px;
     margin-bottom: 4px;
+    padding: 8px;
 }
 
+.input-text-port {
+    width: 48px;
+}

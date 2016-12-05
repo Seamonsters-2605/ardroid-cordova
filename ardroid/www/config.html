@@ -32,20 +32,48 @@
                     <div id="drivetrain-settings">
                         <div id="drivetrain-settings-tank" class="panel">
                             Tank Drive Settings: <br>
+                            
                             <br>
                             Left:<br>
                             <div class="align">
                                 <span class="alignleft">
-                                    <input placeholder="Port" type="number" id="tank-left-1-port">
+                                    <input class="input-text-port"
+                                        placeholder="Port 1" type="number"
+                                        id="tank-left-1-port">
                                     <input type="checkbox" id="tank-left-1-reverse">
                                     Reverse?
                                 </span>
                                 <span class="alignright">
-                                    <input placeholder="Port" type="number" id="tank-left-2-port">
+                                    <input class="input-text-port"
+                                        placeholder="Port 2" type="number"
+                                        id="tank-left-2-port">
                                     <input type="checkbox" id="tank-left-2-reverse">
                                     Reverse?
                                 </span>
                             </div>
+                            
+                            <br>
+                            Right:<br>
+                            <div class="align">
+                                <span class="alignleft">
+                                    <input class="input-text-port"
+                                        placeholder="Port 1" type="number"
+                                        id="tank-right-1-port">
+                                    <input type="checkbox" id="tank-left-1-reverse">
+                                    Reverse?
+                                </span>
+                                <span class="alignright">
+                                    <input class="input-text-port"
+                                        placeholder="Port 2" type="number"
+                                        id="tank-right-2-port">
+                                    <input type="checkbox" id="tank-right-2-reverse">
+                                    Reverse?
+                                </span>
+                            </div>
+                            
+                            <br>
+                            Speed scale:
+                            <input type="range" min="0" max="256">
                             
                         </div>
                         <div id="drivetrain-settings-steer" class="panel">
