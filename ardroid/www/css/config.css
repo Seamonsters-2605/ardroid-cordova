@@ -10,3 +10,8 @@
 .input-text-port {
     width: 48px;
 }
+
+.panel-header {
+    font-weight: bold;
+    display: block;
+}
