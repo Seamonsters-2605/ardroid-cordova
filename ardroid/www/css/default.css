@@ -27,7 +27,7 @@ body {
     background-color:#FFFFFF;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:13px;
     height:100%;
     margin:0px;
     padding:0px;
@@ -89,7 +89,7 @@ p, h2, h3, li {
 }
 
 
-.linkbutton {
+.linkbutton, .dropdown {
     text-align: center;
     border: 1px solid gray;
     border-radius: 6px;
@@ -99,6 +99,11 @@ p, h2, h3, li {
     padding-left: 12px;
     padding-right: 12px;
     margin: 6px;
+}
+
+.dropdown select {
+    background: transparent;
+    border: none;
 }
 
 .color-highlight { /* this must be below types it could apply to */
