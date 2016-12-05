@@ -75,7 +75,8 @@
                             
                             <br>
                             Speed scale:
-                            <input type="range" min="0" max="256">
+                            <input type="range" min="0" max="256"
+                                id="tank-scale" class="input-range-scale">
                             
                         </div>
                         <div id="drivetrain-settings-steer" class="panel">
@@ -84,6 +85,57 @@
                             </span>
                             
                             <br>
+                            Drive:<br>
+                            <div class="align">
+                                <span class="alignleft">
+                                    <input class="input-text-port"
+                                        placeholder="Port 1" type="number"
+                                        id="steer-drive-1-port">
+                                    <input type="checkbox" id="steer-drive-1-reverse">
+                                    Reverse?
+                                </span>
+                                <span class="alignright">
+                                    <input class="input-text-port"
+                                        placeholder="Port 2" type="number"
+                                        id="steer-drive-2-port">
+                                    <input type="checkbox" id="steer-drive-2-reverse">
+                                    Reverse?
+                                </span>
+                            </div>
+                            
+                            <br>
+                            Speed scale:
+                            <input type="range" min="0" max="256"
+                                id="steer-scale" class="input-range-scale">
+                            
+                            <br>
+                            <br>
+                            Steering stepper motor:<br>
+                            <div class="align">
+                                <span class="alignleft">
+                                    <input class="input-text-port"
+                                        placeholder="Port" type="number"
+                                        id="steer-steer-1-port">
+                                    <input type="checkbox" id="steer-steer-1-reverse">
+                                    Reverse?
+                                </span>
+                            </div>
+                            
+                            <br>
+                            Steps per rotation:
+                            <input class="input-number"
+                                placeholder="Steps" type="number"
+                                id="steer-steer-steps">
+                            &nbsp;
+                            RPM:
+                            <input class="input-number"
+                                placeholder="RPM" type="number"
+                                id="steer-steer-rpm">
+                            <br>
+                            <br>
+                            Steer rotations:
+                            <input class="input-number" type="number"
+                                id="steer-steer-rotations">
                             
                         </div>
                     </div>
