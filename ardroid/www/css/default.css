@@ -66,6 +66,19 @@ p {
     margin-right: 8px;
 }
 
+.header {
+    height: 52px;
+    background: #FFF;
+    z-index: 10000;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    margin: 0px auto;
+}
+
+.content { /* for pages with a header */
+    margin-top: 52px auto;
+}
 
 
 .linkbutton {
