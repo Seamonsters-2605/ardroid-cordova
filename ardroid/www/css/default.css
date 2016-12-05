@@ -77,7 +77,7 @@ p {
 }
 
 .content { /* for pages with a header */
-    margin-top: 52px auto;
+    margin: 52px auto;
 }
 
 
