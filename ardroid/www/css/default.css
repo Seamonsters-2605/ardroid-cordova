@@ -68,6 +68,9 @@ a {
 
 p, h2, h3 {
     margin-left: 8px;
+}
+
+p, h2, h3, li {
     margin-right: 8px;
 }
 
