@@ -1,7 +1,7 @@
 .panel {
     border: 1px solid gray;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 8px;
@@ -22,4 +22,9 @@
 .panel-header {
     font-weight: bold;
     display: block;
+}
+
+.content {
+    padding-left: 4px;
+    padding-right: 4px;
 }
