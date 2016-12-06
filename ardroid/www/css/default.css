@@ -61,9 +61,13 @@ a {
     text-decoration: none; /* remove link underline */
 }
 
-.link {
+.link { /* override removing link underline */
     color: #00F;
     text-decoration: underline;
+}
+
+.link:active {
+    background-color: #AAA;
 }
 
 p, h2, h3 {
@@ -101,6 +105,10 @@ p, h2, h3, li {
     margin: 4px;
 }
 
+.linkbutton:active {
+    background-color: #FC3;
+}
+
 .dropdown select {
     background: transparent;
     border: none;
@@ -117,8 +125,16 @@ p, h2, h3, li {
     display: block;
 }
 
+.list-item:active {
+    background-color: #FC3;
+}
+
 .color-highlight { /* this must be below types it could apply to */
     background-color: #FC3;
+}
+
+.color-highlight:active {
+    background-color: #FE5;
 }
 
 .alignleft {
