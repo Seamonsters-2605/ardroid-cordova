@@ -6,11 +6,42 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/control.css">
         <title>ARDROID Bot Control</title>
     </head>
     <body>
         <div class="app">
+            <span id="control1-label"> Custom Control </span>
+            <input class="control-slider" type="range" min="-256" max="256"
+                id="control1">
+            <br>
+            <span id="control2-label"> Custom Control </span>
+            <input class="control-slider" type="range" min="-256" max="256"
+                id="control2">
+            <br>
+            <span id="control3-label"> Custom Control </span>
+            <input class="control-slider" type="range" min="-256" max="256"
+                id="control3">
+            <br>
+            <span id="control4-label"> Custom Control </span>
+            <input class="control-slider" type="range" min="-256" max="256"
+                id="control4">
+            <br>
             
+            <a> <span class="linkbutton color-highlight"
+                style="display:inline-block;width:70%;"> All Off </span> </a>
+            <input type="checkbox" id="tilt-checkbox"> Tilt <br>
+            
+            <a> <span class="linkbutton"
+                style="display:inline-block;width:20%;">
+                Disconnect </span> </a>
+            <a> <span class="linkbutton"
+                style="display:inline-block;width:20%;">
+                Settings </span> </a>
+            <a> <span class="linkbutton"
+                style="display:inline-block;width:20%;">
+                Run Script </span> </a>
+            <canvas id="drive-canvas" height="300" style="width:100%"></canvas>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
     </body>
