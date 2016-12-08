@@ -103,6 +103,7 @@ p, h2, h3, li {
     padding-left: 12px;
     padding-right: 12px;
     margin: 4px;
+    display: inline-block;
 }
 
 .linkbutton:active {
