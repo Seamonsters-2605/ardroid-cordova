@@ -146,6 +146,24 @@ p, h2, h3, li {
     float: right;
 }
 
+.alignthirds-left {
+    float: left;
+    width: 33%;
+    text-align: left;
+}
+
+.alignthirds-center {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.alignthirds-right {
+    float: left;
+    width: 33%;
+    text-align: right;
+}
+
 .align {
     clear: both;
     overflow: auto;
