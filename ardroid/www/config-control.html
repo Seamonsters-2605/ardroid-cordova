@@ -6,6 +6,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/config.css">
         <title>ARDROID Control Settings</title>
     </head>
     <body>
@@ -16,7 +17,85 @@
                 <h1> Edit a custom control </h1>
             </div>
             <div class="content">
-                Content!
+                <form class="settings-form">
+                    Name:&nbsp; <input type="text" style="width:70%;"> <br>
+                    <div style="margin-top:14px;margin-bottom:16px">
+                        Drive Mode:
+                        <span class="dropdown">
+                            <select id="drive-mode">
+                                <option value="dc">
+                                    DC </option>
+                                <option value="stepper-position">
+                                    Stepper position </option>
+                                <option value="stepper-speed">
+                                    Stepper speed </option>
+                            </select>
+                        </span>
+                    </div>
+                    
+                    Motors:<br>
+                    <div class="align">
+                        <span class="alignleft">
+                            <input class="input-text-port"
+                                placeholder="Port 1" type="number"
+                                id="motor-1-port">
+                            <input type="checkbox"
+                                id="motor-1-reverse">
+                            Reverse?
+                        </span>
+                        <span class="alignright">
+                            <input class="input-text-port"
+                                placeholder="Port 2" type="number"
+                                id="motor-2-port">
+                            <input type="checkbox"
+                                id="motor-2-reverse">
+                            Reverse?
+                        </span>
+                    </div>
+                    <br>
+                    <div id="motor-settings">
+                        <div id="motor-settings-dc" class="panel">
+                            <span class="panel-header">
+                                DC Motor Settings:
+                            </span>
+                            <br>
+                            Speed scale:
+                            <input type="range" min="0" max="256"
+                                id="dc-scale" class="input-range-scale">
+                            
+                        </div>
+                        <div id="motor-settings-stepper" class="panel">
+                            <span class="panel-header">
+                                Stepper Motor Settings:
+                            </span>
+                            <br>
+                            Steps per rotation:
+                            <input class="input-number"
+                                placeholder="Steps" type="number"
+                                id="stepper-steps">
+                            &nbsp;
+                            RPM:
+                            <input class="input-number"
+                                placeholder="RPM" type="number"
+                                id="stepper-rpm">
+                        </div>
+                        <div id="motor-settings-stepper-position" class="panel">
+                            <span class="panel-header">
+                                Position Mode Settings:
+                            </span>
+                            <br>
+                            Rotations:
+                            <br>
+                            Forwards:
+                            <input class="input-number" type="number"
+                                id="stepper-rotations-forwards">
+                            &nbsp;
+                            Backwards:
+                            <input class="input-number" type="number"
+                                id="stepper-rotations-backwards">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
