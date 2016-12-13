@@ -1,3 +1,5 @@
+var backLink = document.getElementById("back");
+
 var driveModeSelect = document.getElementById("drive-mode");
 var tankDriveSettingsDiv = document.getElementById("drivetrain-settings-tank");
 var steerDriveSettingsDiv =
@@ -96,5 +98,11 @@ function saveConfig() {
     tankLeftReverseUpdated();
     tankRightPortsUpdated();
     tankRightReverseUpdated();
+    tankScaleUpdated();
+}
+
+backLink.onclick = function() {
+    saveConfig();
+    window.history.back();
 }
 
